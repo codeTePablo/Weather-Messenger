@@ -6,6 +6,7 @@ class Weather:
         """
         Insert data from env
         Args:
+            self: The instance of the class
             arg1 (str):
             arg2 (str):
             arg3 (str):
@@ -28,14 +29,24 @@ class Weather:
     def get_weather(self):
         """ """
         weather_data = self.connection_to_api()
-        weather_slice = weather_data["weather"][0]["description"]
-        # print(weather_slice)
+        weather = weather_data["weather"][0]["description"]
+        # print(weather_data)
+        return weather
 
-    def convert_temperature(self):
+    def get_temperature(self):
+        """ """
+        weather_data = self.connection_to_api()
+        temperature_data = weather_data["main"]["temp"]
+        # print(temperature_data)
+        temperature = self.convert_temperature(temperature_data)
+        return temperature
+
+    def convert_temperature(self, temperature_data):
         """
         kevin to celsius
         """
-        weather_data = self.connection_to_api()
-        temperature_slice = weather_data["main"]["temp"]
-        # print(temperature_slice)
-        pass
+        # temperature_data = self.get_temperature()
+        x = temperature_data - 273.15
+        temperature = round(x, 2)
+        # print(temperature)
+        return temperature

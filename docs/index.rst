@@ -1,4 +1,4 @@
-Poll Maker
+Weather Messenger
 ==========
 
 .. contents::
@@ -18,7 +18,7 @@ Features
 Installation
 ------------
 
-To run Poll Maker you need install requirements, all you need instead in this file:
+To run Weather Messenger you need install requirements, all you need instead in this file:
 
 .. code-block:: sh
 
@@ -27,7 +27,7 @@ To run Poll Maker you need install requirements, all you need instead in this fi
 Documentation
 -------------
 
-- The `Poll Maker` module provides a detailed documentation of the package
+- The ` Weather Messenger` module provides a detailed documentation of the package
 - `myproject.submodule` provides documentation of submodule
 - `myproject.submodule.subsubmodule` provides documentation of subsubmodule
 
