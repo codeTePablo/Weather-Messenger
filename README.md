@@ -1,11 +1,10 @@
 # Weather-Messenger
+This project is a Weather Alert Generator in Python that sends personalized messages to clients with weather-specific precautions and recommendations. It utilizes the Pillow library to generate weather-specific images, and the Twilio API to send these images and messages as alerts to the clients.
 
 <p align="center">
   <img src="src/images/gui.png">
   <br/>
 </p>
-
-This project is a Weather Alert Generator in Python that sends personalized messages to clients with weather-specific precautions and recommendations. It utilizes the Pillow library to generate weather-specific images, and the Twilio API to send these images and messages as alerts to the clients.
 
 ## Features:
 
